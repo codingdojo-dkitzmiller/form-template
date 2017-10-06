@@ -50,4 +50,24 @@
 
         </form>
     </div>
+    <div [hidden]='!submitted' class='table'>
+        <h2>You submitted: </h2>
+        <hr />
+        <div class='row'>
+            <div class='col-xs-3 font-weight-bold'>Name</div>
+            <div class='col-xs-9 pull-left text-primary'>{{model.name}}</div>
+        </div>
+        <div class='row'>
+            <div class='col-xs-3 font-weight-bold'>Powers</div>
+            <div class='col-xs-9 pull-left text-primary'>{{model.power}}</div>
+        </div>
+        <div class='row'>
+            <div class='col-xs-3 font-weight-bold'>Alter Ego</div>
+            <div class='col-xs-9 pull-left text-primary'>{{model.alterEgo}}</div>
+        </div>
+        <div>
+            <hr />
+            <button class='btn btn-primary' (click)='submitted=false;'>Edit</button>
+        </div>
+    </div>
 </div>
