@@ -12,7 +12,6 @@ import {HeroFormComponent} from './hero/hero-form/hero-form.component';
     ],
     imports: [
         BrowserModule,
-        HeroFormComponent,
         FormsModule
     ],
     providers: [],
